@@ -20,7 +20,14 @@ namespace PracticeForms
         private void Form1_Load(object sender, EventArgs e)
         {
             System.Drawing.Drawing2D.GraphicsPath myPath = new System.Drawing.Drawing2D.GraphicsPath();
-            myPath.AddEllipse(300, 300, this.Width, this.Height);
+            myPath.AddEllipse(0, 0, this.Width, this.Height);
+            Region myRegion = new Region(myPath);
+            this.Region = myRegion;
+        }
+
+        private void cmdClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
