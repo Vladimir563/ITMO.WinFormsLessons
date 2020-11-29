@@ -1,6 +1,6 @@
 ﻿namespace PracticeForms
 {
-    partial class Form1
+    partial class CloseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -64,7 +64,7 @@
             this.Name = "Form1";
             this.Opacity = 0.7D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lab1Ex5";
+            this.Text = "Trey Research";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

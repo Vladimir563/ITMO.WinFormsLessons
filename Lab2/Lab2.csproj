@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{63664CD8-75D8-4173-8B44-68FD88176CB4}</ProjectGuid>
+    <ProjectGuid>{DEDEA82C-62C0-4550-ABE0-1CB0B22BAB11}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PracticeForms</RootNamespace>
-    <AssemblyName>PracticeForms</AssemblyName>
+    <RootNamespace>Lab2</RootNamespace>
+    <AssemblyName>Lab2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,49 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChildForm.cs">
+    <Compile Include="TestList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForm.Designer.cs">
-      <DependentUpon>ChildForm.cs</DependentUpon>
+    <Compile Include="TestList.Designer.cs">
+      <DependentUpon>TestList.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainTask1\CloseForm.cs">
+    <Compile Include="WinContainer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainTask1\CloseForm.Designer.cs">
-      <DependentUpon>CloseForm.cs</DependentUpon>
+    <Compile Include="WinContainer.Designer.cs">
+      <DependentUpon>WinContainer.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainTask2\GreenpeaceForm.cs">
+    <Compile Include="WinQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainTask2\GreenpeaceForm.Designer.cs">
-      <DependentUpon>GreenpeaceForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainTask2\StartForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainTask2\StartForm.Designer.cs">
-      <DependentUpon>StartForm.cs</DependentUpon>
+    <Compile Include="WinQuestion.Designer.cs">
+      <DependentUpon>WinQuestion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ParentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ParentForm.Designer.cs">
-      <DependentUpon>ParentForm.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="ChildForm.resx">
-      <DependentUpon>ChildForm.cs</DependentUpon>
+    <EmbeddedResource Include="TestList.resx">
+      <DependentUpon>TestList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainTask1\CloseForm.resx">
-      <DependentUpon>CloseForm.cs</DependentUpon>
+    <EmbeddedResource Include="WinContainer.resx">
+      <DependentUpon>WinContainer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainTask2\GreenpeaceForm.resx">
-      <DependentUpon>GreenpeaceForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainTask2\StartForm.resx">
-      <DependentUpon>StartForm.cs</DependentUpon>
+    <EmbeddedResource Include="WinQuestion.resx">
+      <DependentUpon>WinQuestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,9 +84,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ParentForm.resx">
-      <DependentUpon>ParentForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
