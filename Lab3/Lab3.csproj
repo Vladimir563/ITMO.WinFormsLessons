@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DEDEA82C-62C0-4550-ABE0-1CB0B22BAB11}</ProjectGuid>
+    <ProjectGuid>{B5F53A05-33BD-4CB7-8244-95F745C5836D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lab2</RootNamespace>
-    <AssemblyName>Lab2</AssemblyName>
+    <RootNamespace>Lab3</RootNamespace>
+    <AssemblyName>Lab3</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,44 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RegistrationForm.cs">
+    <Compile Include="UserControlTimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTimer.Designer.cs">
+      <DependentUpon>UserControlTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinTimer1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationForm.Designer.cs">
-      <DependentUpon>RegistrationForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TestList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TestList.Designer.cs">
-      <DependentUpon>TestList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WinContainer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WinContainer.Designer.cs">
-      <DependentUpon>WinContainer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WinQuestion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WinQuestion.Designer.cs">
-      <DependentUpon>WinQuestion.cs</DependentUpon>
+    <Compile Include="WinTimer1.Designer.cs">
+      <DependentUpon>WinTimer1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="RegistrationForm.resx">
-      <DependentUpon>RegistrationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestList.resx">
-      <DependentUpon>TestList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WinContainer.resx">
-      <DependentUpon>WinContainer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WinQuestion.resx">
-      <DependentUpon>WinQuestion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -93,6 +69,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControlTimer.resx">
+      <DependentUpon>UserControlTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinTimer1.resx">
+      <DependentUpon>WinTimer1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
